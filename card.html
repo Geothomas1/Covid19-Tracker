@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid19</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/f.png">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+
+    <title>Accordion</title>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+    <script src="js/mobiscroll.javascript.min.js"></script>
+
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    </style>
+
+</head>
+<body>
+ <div id="main-wrapper">
+          <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.php"><img src="./images/icon.png" alt="">
+                                <span>Covid19 Tracker</span></a>
+                            
+
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div mbsc-page class="demo-accordion">
+  <div style="height:100%">
+      
+    <div mbsc-accordion>
+      
+    
+        <div mbsc-card data-collapsible>
+            <div class="mbsc-card-header">
+                <img src="https://img.mobiscroll.com/demos/f1.png" class="mbsc-avatar">
+                <h5 class="mbsc-card-title mbsc-bold">Hortense Tinker</h5>
+                <div class="mbsc-card-subtitle">Tinker Records</div>
+            </div>
+            <div class="mbsc-card-content">
+                
+
+
+<div class="row">
+                   
+
+                    <div class="col-xl-9">
+                        <div class="card">
+                            <div class="card-body">
+                               
+                                <div class="all-country table-responsive">
+                                    <table id="table" class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                               
+                                                <th>Country</th>
+                                                <th>Cases</th>
+                                                <th>Today Cases</th>
+                                                <th>Deaths</th>
+                                                <th>Today Deaths</th>
+                                                <th>Recovered</th>
+                                                <th>Active</th>
+                                                <th>Critical</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    
+    </div>
+  </div>
+</div>
+</div>
+<script>
+
+    mobiscroll.settings = {
+        lang: 'en',            // Specify language like: lang: 'pl' or omit setting to use default
+        theme: 'ios',          // Specify theme like: theme: 'ios' or omit setting to use default
+        themeVariant: 'light'  // More info about themeVariant: https://docs.mobiscroll.com/4-10-3/javascript/cards#opt-themeVariant
+    }
+    
+    var collapsibles = document.querySelectorAll('[data-collapsible]');
+    
+    mobiscroll.listview('.md-contact-list', {
+        swipe: false,
+        enhance: true
+    })
+    
+    document
+        .getElementById('close-all')
+        .addEventListener('click', function () {
+            for (var i = 0; i < collapsibles.length; ++i) {
+                mobiscroll.instances[collapsibles[i].id].hide();
+            }
+        })
+
+    document
+        .getElementById('toggle-last')
+        .addEventListener('click', function () {
+            mobiscroll.instances[collapsibles[3].id].toggle();
+        })
+</script>
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src='./vendor/fixed-header-table/jquery.fixedheadertable.min.js'></script>
+    <script src="./js/plugins/fixedheadertable-init.js"></script>
+    
+
+
+    <script src="./js/world/dashboard.js"></script>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
